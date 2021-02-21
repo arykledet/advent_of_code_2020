@@ -5,7 +5,7 @@
 #define isSum(A, B, SUM)     ((A)+(B) == (SUM) ? (1):(0)) 
 
 // Retrieve the number of lines in our target file
-uint16_t getNumLines(std::ifstream &fd, std::string &path)
+int16_t getNumLines(std::ifstream &fd, std::string &path)
 {
     fd.open(path);
     uint16_t count = 0;
